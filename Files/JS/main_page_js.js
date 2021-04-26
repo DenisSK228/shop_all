@@ -28,6 +28,6 @@ if (animItems.length > 0) {
     }
     setTimeout(() => {
         anim_on_scroll()
-    }, 300)
+    }, 100)
     
 }
