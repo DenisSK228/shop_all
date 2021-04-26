@@ -10,20 +10,24 @@ if (animItems.length > 0) {
 
             let animItemPoint = window.innerHeight - animItemHeight / animStart;
             if (animItemHeight > window.innerHeight) {
-                let animItemPoint = window.innerHeight - window.innerHeight / animStart;
+                animItemPoint = window.innerHeight - window.innerHeight / animStart;
             }
 
             if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
-                animItem.classList.add('_active')
+                animItem.classList.add('_active');
             } else {
-                animItem.classList.remove('_active')
+                animItem.classList.remove('_active');
             }
         }
     }
     function offset(el) {
         const rect = el.getBoundingClientRect(),
             scroolLeft = window.pageXOffset || document.documentElement.scrollLeft,
-            scrollTop = window.pageYOffset || document.documentElement.scrollTop,
+            scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         return { top: rect.top + scrollTop, left: rect.left + scroolLeft }
     }
+    setTimeout(() => {
+        anim_on_scroll()
+    }, 300)
+    
 }
