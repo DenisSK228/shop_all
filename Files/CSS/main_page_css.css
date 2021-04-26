@@ -68,6 +68,9 @@ ul {
     position: relative;
     top: -18.7vw;
     margin: 0px;
+    transform: translate(-0.5%, 5%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
 }
 
 .two_asd._active {
@@ -117,6 +120,9 @@ ul {
     margin: 0;
     position: relative;
     top: -27.79vw;
+    transform: translate(-0.5%, 5%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
 }
 
 .three_asd._active {
