@@ -13,7 +13,9 @@ if (animItems.length > 0) {
                 let animItemPoint = window.innerHeight - window.innerHeight / animStart;
             }
 
-
+            if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
+                animItem.classList.add('_active')
+            }
         }
     }
     function offset(el) {
