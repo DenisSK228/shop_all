@@ -23,6 +23,14 @@ ul {
 .one_ps {
     position: relative;
     top: -11.5vw;
+    transform: translate(0px, 5%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+
+.one_ps._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
 }
 
 .one_name {
