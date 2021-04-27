@@ -1,12 +1,14 @@
-const animItems = document.querySelectorAll('._anim-items')
+const animItems = document.querySelectorAll('._anim-items');
 
 if (animItems.length > 0) {
+    window.addEventListener('scroll', anim_on_scroll)
     function anim_on_scroll(params) {
+        
         for (let index = 0; index < animItems.length; index++) {
             const animItem = animItems[index];
             const animItemHeight = animItem.offsetHeight;
             const animItemOffset = offset(animItem).top;
-            const animStart = 4
+            const animStart = 4;
 
             let animItemPoint = window.innerHeight - animItemHeight / animStart;
             if (animItemHeight > window.innerHeight) {
@@ -26,8 +28,9 @@ if (animItems.length > 0) {
             scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         return { top: rect.top + scrollTop, left: rect.left + scroolLeft }
     }
+
     setTimeout(() => {
-        anim_on_scroll()
+        anim_on_scroll();
     }, 100)
     
 }
