@@ -10,15 +10,18 @@ if (animItems.length > 0) {
             const animItemOffset = offset(animItem).top;
             const animStart = 4;
 
-            let animItemPoint = window.innerHeight - animItemHeight / animStart;
+            let animItemPoint = (window.innerHeight - animItemHeight / animStart) - 200;
             if (animItemHeight > window.innerHeight) {
-                animItemPoint = window.innerHeight - window.innerHeight / animStart;
+                animItemPoint = (window.innerHeight - window.innerHeight / animStart) - 200;
             }
 
             if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
                 animItem.classList.add('_active');
             } else {
-                animItem.classList.remove('_active');
+                if (animItem.classList.contains('_anim_no_restart')) {
+                    animItem.classList.remove('_active');
+                }
+                
             }
         }
     }
