@@ -3,7 +3,6 @@ const animItems = document.querySelectorAll('._anim-items');
 if (animItems.length > 0) {
     window.addEventListener('scroll', anim_on_scroll)
     function anim_on_scroll(params) {
-        
         for (let index = 0; index < animItems.length; index++) {
             const animItem = animItems[index];
             const animItemHeight = animItem.offsetHeight;
@@ -34,4 +33,4 @@ if (animItems.length > 0) {
 
     setTimeout(() => {
         anim_on_scroll();
-    }, 100)
+    }, 30)

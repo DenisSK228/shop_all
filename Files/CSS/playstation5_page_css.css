@@ -13,6 +13,7 @@
     position: relative;
     top: -25vw;
     left: 12vw;
+    opacity: 1;
 }
 
 .logo_playstation5_start {
@@ -20,15 +21,16 @@
     position: relative;
     top: -37vw;
     left: 17vw;
+    opacity: 1;
 }
 
 .start_text {
-    position: relative;
-    top: 2vw;
+    transform: translate(0px, -5%);
+    transition: all 0.8s ease 0s;
     opacity: 0;
 }
 
 .start_text._active{
+    transform: translate(0px, 0px);
     opacity: 1;
-    top: 0;
 }
