@@ -1,7 +1,11 @@
 const animItems = document.querySelectorAll('._anim-items');
 
 if (animItems.length > 0) {
-    window.addEventListener('scroll', anim_on_scroll)
+    window.addEventListener('scroll', () => {
+        anim_on_scroll()
+        right_to_left()
+    })
+
     function anim_on_scroll(params) {
         for (let index = 0; index < animItems.length; index++) {
             const animItem = animItems[index];
@@ -35,4 +39,13 @@ if (animItems.length > 0) {
         anim_on_scroll();
     }, 200)
     
+}
+
+function right_to_left() {
+    const animItems_spm = document.querySelectorAll('.li_spec');
+    for (let index = 0; index < animItems.length; index++) {
+        const animItem = animItems_spm[index];
+        a = animItem.style.left
+        animItem.style.left 
+    }
 }
