@@ -9,9 +9,9 @@ if (animItems.length > 0) {
             const animItemOffset = offset(animItem).top;
             const animStart = 4;
 
-            let animItemPoint = (window.innerHeight - animItemHeight / animStart) - 200;
+            let animItemPoint = (window.innerHeight - animItemHeight / animStart);
             if (animItemHeight > window.innerHeight) {
-                animItemPoint = (window.innerHeight - window.innerHeight / animStart) - 200;
+                animItemPoint = (window.innerHeight - window.innerHeight / animStart);
             }
 
             if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
@@ -33,4 +33,6 @@ if (animItems.length > 0) {
 
     setTimeout(() => {
         anim_on_scroll();
-    }, 30)
+    }, 200)
+    
+}
