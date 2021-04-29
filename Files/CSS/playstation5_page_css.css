@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 .img_playstation5_start {
     position: relative;
     left: -0.3vw;
@@ -50,4 +54,33 @@
     -webkit-text-stroke: 0.3px gray;
     position: relative;
     top: -8vw;
+}
+
+.li_spec {
+    list-style-type: none;
+    position: relative;
+    margin: 1.1vw;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+    margin: 0; 
+    padding: 0; 
+    list-style: none; 
+    text-align: center;
+}
+
+
+section {
+    position: relative;
+    top: -70vw;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vw; 
+    overflow: hidden;
 }

@@ -3,7 +3,6 @@ const animItems = document.querySelectorAll('._anim-items');
 if (animItems.length > 0) {
     window.addEventListener('scroll', () => {
         anim_on_scroll()
-        right_to_left()
     })
 
     function anim_on_scroll(params) {
@@ -41,11 +40,18 @@ if (animItems.length > 0) {
     
 }
 
-function right_to_left() {
-    const animItems_spm = document.querySelectorAll('.li_spec');
-    for (let index = 0; index < animItems.length; index++) {
-        const animItem = animItems_spm[index];
-        a = animItem.style.left
-        animItem.style.left 
-    }
-}
+const vw = window.innerWidth / 100;
+const vh = window.innerHeight / 100;
+const px = vw / document.documentElement.clientWidth
+
+let el = document.querySelector('#anchor'),
+    els = el.querySelectorAll('.li_spec'),
+    elp = el.getBoundingClientRect();
+
+els.forEach(function (e,i) {
+    e.setAttribute('data-anchor-target', '#anchor');
+  e.setAttribute('data-250', 'left:0%;');
+  e.setAttribute('data-' + Math.floor(40-(10*i)) + 'p-top', 'left:460%;');
+});
+
+skrollr.init();
