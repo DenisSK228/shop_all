@@ -50,8 +50,8 @@ let el = document.querySelector('#anchor'),
 
 els.forEach(function (e,i) {
     e.setAttribute('data-anchor-target', '#anchor');
-  e.setAttribute('data-250', 'left:0%;');
-  e.setAttribute('data-' + Math.floor(40-(10*i)) + 'p-top', 'left:460%;');
+  e.setAttribute('data-350', 'left:0%;opasity: 1;');
+  e.setAttribute('data-' + Math.floor(40-(10*i)) + 'p-top', 'left:460%; opasity: 0;');
 });
 
 skrollr.init();
