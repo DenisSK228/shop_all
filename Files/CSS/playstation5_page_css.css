@@ -60,6 +60,7 @@ body {
     list-style-type: none;
     position: relative;
     margin: 1.1vw;
+    font-size: 2vw;
 }
 
 ul{
@@ -83,4 +84,65 @@ section {
     align-items: center; 
     height: 100vw; 
     overflow: hidden;
+}
+
+.grid-container_main2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "main2";
+}
+
+.main2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0px 0px;
+    grid-template-areas:
+      "lighting_speed_container"
+      "photo_text_lighting_speed";
+    grid-area: main2;
+}
+
+.lighting_speed_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0px 0px;
+    grid-template-areas:
+      "img_all_playstation5_for_main_for_img"
+      "lightning_speed_container_text";
+    grid-area: lighting_speed_container;
+}
+
+.img_all_playstation5_for_main_for_img {
+    grid-area: img_all_playstation5_for_main_for_img;
+}
+
+.lightning_speed_container_text {
+    grid-area: lightning_speed_container_text;
+}
+
+.photo_text_lighting_speed {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "lighting_ssd lighting_i_o";
+    grid-area: photo_text_lighting_speed;
+}
+
+.lighting_ssd {
+    grid-area: lighting_ssd;
+}
+
+.lighting_i_o {
+    grid-area: lighting_i_o;
+}
+
+.img_all_playstation5_for_main {
+    width: 99vw;
 }
