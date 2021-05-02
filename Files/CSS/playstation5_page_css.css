@@ -10,7 +10,8 @@
 
 body {
     margin: 0;
-    overflow-x: hidden;  
+    overflow-x: hidden;
+    overflow-y: auto;  
 }
 
 .img_playstation5_start {
@@ -109,20 +110,22 @@ section {
 
 .main2 {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 100vw;
+    grid-template-rows: 5 0vw, 90vw;
     gap: 0px 0px;
     grid-template-areas:
       "lighting_speed_container"
       "photo_text_lighting_speed";
     grid-area: main2;
     justify-content: center;
+    position: relative;
+    top: -100vw;
 }
 
 .lighting_speed_container {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 100vw;
+    grid-template-rows: repeat(2, 50vw);
     gap: 0px 0px;
     grid-template-areas:
       "img_all_playstation5_for_main_for_img"
@@ -146,17 +149,17 @@ section {
     grid-template-areas:
       "lighting_ssd lighting_i_o";
     grid-area: photo_text_lighting_speed;
+    position: relative;
+    top: -40vw;
 }
 
 .lighting_ssd {
     grid-area: lighting_ssd;
-    background-color: aqua;
     justify-content: center;
 }
 
 .lighting_i_o {
     grid-area: lighting_i_o;
-    background-color: antiquewhite
 }
 
 .img_all_playstation5_for_main {
@@ -165,16 +168,48 @@ section {
     left: 5.9vw;
 }
 
-.lighting_i_o_img {
-    width: 15.5vw;
+.lighting_ssd_img {
+    width: 11.5vw;
     position: relative;
-    left: 16.6vw;
+    left: 19.6vw;
 }
 
-.lighting_ssd_img {
-    width: 15.5vw;
+.slogan_lighting_ssd {
+    font-family: SST_light;
+    font-size: 1.8vw;
     position: relative;
-    left: 16.6vw;
+    top: -3vw;
+}
+
+.slogan_lighting_i_o {
+    font-family: SST_light;
+    font-size: 1.8vw;
+    position: relative;
+    top: -3vw;
+}
+
+.lighting_i_o_img {
+    width: 11.5vw;
+    position: relative;
+    left: 19.6vw;
+}
+
+.lighting_i_o_text {
+    text-align: center;
+    position: relative;
+    top: -2vw;
+    font-family: SST_light;
+    font-size: 1.6vw;
+    color: grey;
+}
+
+.lighting_ssd_text {
+    text-align: center;
+    position: relative;
+    top: -2vw;
+    font-family: SST_light;
+    font-size: 1.6vw;
+    color: grey;
 }
 
 .lighting_speed {
@@ -188,6 +223,85 @@ section {
 .lighting_speed_text {
     font-family: SST_light;
     font-size: 1.5vw;
-    color: gray;
+    color: grey;
     text-align: center;
+}
+
+.slogan_lighting_ssd {
+    text-align: center;
+}
+
+.slogan_lighting_i_o {
+    text-align: center;
+}
+
+.lightning_speed_container_text {
+    position: relative;
+    top: -9vw;
+}
+
+.img_all_playstation5_for_main_for_img {
+    transform: translate(0px, -5%);
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+}
+
+.img_all_playstation5_for_main_for_img._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.lightning_speed_container_text {
+    transform: translate(0px, -5%);
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+}
+
+.lightning_speed_container_text._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.lighting_i_o_img {
+    transform: translate(0px, -100%);
+    transition: all 1s ease 0s;
+    opacity: 0;
+}
+
+.lighting_i_o_img._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.lighting_ssd_img {
+    transform: translate(0px, -100%);
+    transition: all 1s ease 0s;
+    opacity: 0;
+}
+
+.lighting_ssd_img._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.lighting_i_o_text {
+    transform: translate(0px, -5%);
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+}
+
+.lighting_i_o_text._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.lighting_ssd_text {
+    transform: translate(0px, -5%);
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+}
+
+.lighting_ssd_text._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
 }
