@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'SST';
+    src: local('SST Ultra Light'), local('SST-Ultra-Light'),
+        url('SST-UltraLight.woff2') format('woff2'),
+        url('SST-UltraLight.woff') format('woff'),
+        url('SST-UltraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+  }

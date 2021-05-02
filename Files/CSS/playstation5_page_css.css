@@ -1,5 +1,16 @@
+@font-face {
+    font-family: SST_light;
+    src: url("../../sources/Font/SST_light/SST-Light.ttf");
+}
+
+@font-face {
+    font-family: SST_UL;
+    src: url("../../sources/Font/SST_UL/SST-UltraLight.ttf");
+}
+
 body {
     margin: 0;
+    overflow-x: hidden;  
 }
 
 .img_playstation5_start {
@@ -12,7 +23,7 @@ body {
 
 .text_playstation5_start {
     font-size: 4vw;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: SST_light;
     color: whitesmoke;
     position: relative;
     top: -25vw;
@@ -61,7 +72,7 @@ body {
     position: relative;
     margin: 1.1vw;
     font-size: 2.8vw;
-    font-family: Roman-55,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-family: SST_light;
 }
 
 ul{
@@ -75,7 +86,6 @@ ul{
     list-style: none; 
     text-align: center;
 }
-
 
 section {
     position: relative;
@@ -118,7 +128,6 @@ section {
       "img_all_playstation5_for_main_for_img"
       "lightning_speed_container_text";
     grid-area: lighting_speed_container;
-    background-color: blueviolet
 }
 
 .img_all_playstation5_for_main_for_img {
@@ -148,12 +157,12 @@ section {
 .lighting_i_o {
     grid-area: lighting_i_o;
     background-color: antiquewhite
-
 }
 
 .img_all_playstation5_for_main {
-    width: 99vw;
-
+    width: 85vw;
+    position: relative;
+    left: 5.9vw;
 }
 
 .lighting_i_o_img {
@@ -166,4 +175,19 @@ section {
     width: 15.5vw;
     position: relative;
     left: 16.6vw;
+}
+
+.lighting_speed {
+    font-family: SST_UL;
+    font-size: 3vw;
+    position: relative;
+    left: 33vw;
+    color: black;
+}
+
+.lighting_speed_text {
+    font-family: SST_light;
+    font-size: 1.5vw;
+    color: gray;
+    text-align: center;
 }
