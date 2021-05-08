@@ -8,10 +8,16 @@
     src: url("../../sources/Font/SST_UL/SST-UltraLight.ttf");
 }
 
+@font-face {
+    font-family: BebasNeue;
+    src: url("../../sources/Font/BebasNeue/bebasneuelight.ttf");
+}
+
 body {
     margin: 0;
     overflow-x: hidden;
     overflow-y: auto;  
+    height: 100%;
 }
 
 .img_playstation5_start {
@@ -305,3 +311,57 @@ section {
     transform: translate(0px, 0px);
     opacity: 1;
 }
+
+.main3 {
+    position: relative;
+    top: -138vw;
+}
+
+.bg_SM_MM {
+    width: 100%;
+    background-image: url(../../sources/Img/Playstation_5_spider_miles.jpg);
+}
+
+.slg_Pol_Pog {
+    font-family: BebasNeue;
+    font-size: 2.9vw;
+    color: white;
+    margin: 0;
+    position: relative;
+    top: -55vw;
+    text-align: center;
+}
+
+.text_Pol_pog {
+    font-family: SST_light;
+    text-align: center;
+    font-size: 1.3vw;
+    position: relative;
+    top: -56vw;
+    color: white;
+}
+
+.tempec3d_imgtxt {
+    display: grid;
+    grid-template-columns: auto 15vw;
+    grid-template-rows: auto;
+    gap: 0px 0px;
+    grid-template-areas:
+      "img_tempec3d text_tempec3d";
+    text-align: center;
+    position: relative;
+    top: -18vw;
+    left: -13vw;
+}
+  
+.img_tempec3d {
+    grid-area: img_tempec3d;
+}
+
+.text_tempec3d {
+    grid-area: text_tempec3d;
+}
+
+.logo_tempec3d {
+    height: 6vw;
+}  
