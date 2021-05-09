@@ -13,6 +13,10 @@
     src: url("../../sources/Font/BebasNeue/bebasneuelight.ttf");
 }
 
+.main1 {
+    height: 5000px;
+}
+
 p {
     text-align: center;
 }
@@ -98,7 +102,7 @@ ul{
     text-align: center;
 }
 
-section {
+.classers {
     position: relative;
     top: -73vw;
     display: flex; 
@@ -544,7 +548,7 @@ section {
     margin: 0px;
     color: black;
     position: relative;
-    top: -2vw;
+    top: -3vw;
 }
 
 .txt_astroplayroom {
@@ -557,7 +561,7 @@ section {
     padding: 10px;
     text-align: left;
     position: relative;
-    top: -5vw;
+    top: -7.5vw;
 }
 
 .btn_astroplayroom {
@@ -568,4 +572,72 @@ section {
     width: 35vw;
     margin: 0 auto;
     text-align: center;
+}
+
+.myButton {
+	background-color:#0034e0;
+	border-radius:20px;
+	border:2px solid #1b44ca;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:18px;
+	font-weight:bold;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px -1px 6px #213443;
+    position: relative;
+    top: -9vw;
+}
+.myButton:hover {
+	background-color:#1774ff;
+    border: 4px solid blue;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.main5 {
+    position: relative;
+    top: -158vw;
+}
+
+._all_photo {
+    width: 13vw;
+}
+
+._slogan_all {
+    text-align: center;
+    font-family: SST_light;
+    font-size: 3vw;
+    position: relative;
+    top: -13.5vw;
+}
+
+._all_text_ntb {
+    position: relative;
+    top: -14.5vw;
+    font-family: SST_light;
+    font-size: 1.2vw;
+    color: grey;
+    text-align: center;
+}
+
+.k4_br {
+    position: relative;
+    left: 4vw;
+}
+
+.k4_translation {
+    position: relative;
+    left: 4vw;
+    top: -10vw;
+}
+
+.new_content {
+    position: relative;
+    left: 4vw;
+    top: -18vw;
 }
