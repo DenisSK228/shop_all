@@ -13,6 +13,10 @@
     src: url("../../sources/Font/BebasNeue/bebasneuelight.ttf");
 }
 
+p {
+    text-align: center;
+}
+
 body {
     margin: 0;
     overflow-x: hidden;
@@ -343,15 +347,18 @@ section {
 
 .tempec3d_imgtxt {
     display: grid;
-    grid-template-columns: auto 15vw;
+    grid-template-columns: auto 55vw;
     grid-template-rows: auto;
     gap: 0px 0px;
     grid-template-areas:
       "img_tempec3d text_tempec3d";
     text-align: center;
     position: relative;
-    top: -18vw;
+    top: -20vw;
     left: -13vw;
+    transform: translate(1px, -5%);
+    transition: all 1s ease 0s;
+    opacity: 0;
 }
   
 .img_tempec3d {
@@ -364,4 +371,201 @@ section {
 
 .logo_tempec3d {
     height: 6vw;
-}  
+    position: relative;
+    left: 5vw;
+    top: 1.5vw;
+}
+
+.slg_tempec3d {
+    font-family: SST_light;
+    color: white;
+    font-size: 1.5vw;
+    position: relative;
+    left: -24vw;
+}
+
+.txt_tempec3d {
+    font-family: SST_UL;
+    color: white;
+    font-size: 1.3vw;
+    text-align: left;
+    position: relative;
+    left: -4.2vw;
+}
+
+.tempec3d_imgtxt._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.main4 {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "feedback_world feedback_world"
+      "text_feedback_world text_feedback_world"
+      "active_feedback adaptive_shutter_buttons"
+      "active_feedback adaptive_shutter_buttons";
+    height: 900px;
+    position: relative;
+    top: -158.5vw;
+    font-family: SST_UL;
+    color: white;
+}
+  
+.feedback_world {
+    grid-area: feedback_world;
+    font-size: 2.5vw;
+    position: relative;
+    top: 5vw;
+    text-align: center;
+    font-family: SST_light;
+}
+
+.text_feedback_world {
+    grid-area: text_feedback_world;
+    font-family: SST_UL;
+    font-size: 1.5vw;
+    position: relative;
+    top: -6.5vw;
+    text-align: center;
+}
+
+.active_feedback {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "logo_active_feedback"
+    "slg_active_feedback"
+    "txt_active_feedback";
+  grid-area: active_feedback;
+  position: relative;
+  top: -15vw;
+  padding: 25px;
+}
+
+.logo_active_feedback {
+    grid-area: logo_active_feedback;
+}
+
+.slg_active_feedback {
+    grid-area: slg_active_feedback;
+    text-align: center;
+    font-size: 2.4vw;
+}
+
+.txt_active_feedback {
+    grid-area: txt_active_feedback;
+    font-size: 1.2vw;
+}
+
+.adaptive_shutter_buttons {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "logo_adaptive_shutter_buttons"
+    "slg_adaptive_shutter_buttons"
+    "txt_adaptive_shutter_buttons";
+  grid-area: adaptive_shutter_buttons;
+  position: relative;
+  top: -15vw;
+  padding: 25px;
+}
+
+.logo_adaptive_shutter_buttons {
+    grid-area: logo_adaptive_shutter_buttons;
+}
+
+.slg_adaptive_shutter_buttons {
+    grid-area: slg_adaptive_shutter_buttons;
+    text-align: center;
+    font-size: 2.4vw;
+}
+
+.txt_adaptive_shutter_buttons {
+    grid-area: txt_adaptive_shutter_buttons;
+    font-size: 1.2vw;
+}
+
+.img_logo_active_feedback {
+    width: 25vw;
+    text-align: center;
+    position: relative;
+    left: 12.5vw;
+}
+
+.img_logo_adaptive_shutter_buttons {
+    width: 25vw;
+    text-align: center;
+    position: relative;
+    left: 12.5vw;
+}
+
+.main4_astroplaroom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "img_astroplayroom all_text_astro_playroom";
+    position: relative;
+    top: -156.5vw;
+}
+
+.img_astroplayroom {
+    grid-area: img_astroplayroom;
+    text-align: center;
+}
+
+.all_text_astro_playroom {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "slg_astroplayroom"
+      "txt_astroplayroom"
+      "btn_astroplayroom";
+    grid-area: all_text_astro_playroom;
+    text-align: left;
+}
+
+.slg_astroplayroom {
+    grid-area: slg_astroplayroom;
+    font-family: SST_light;
+    font-size: 3.5vw;
+    margin: 0px;
+    color: black;
+    position: relative;
+    top: -2vw;
+}
+
+.txt_astroplayroom {
+    grid-area: txt_astroplayroom;
+    font-family: SST_UL;
+    font-size: 1.4vw;
+    margin: 0px;
+    color: black;
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+    position: relative;
+    top: -5vw;
+}
+
+.btn_astroplayroom {
+    grid-area: btn_astroplayroom;
+}
+
+.pic_astroplayroom {
+    width: 35vw;
+    margin: 0 auto;
+    text-align: center;
+}
