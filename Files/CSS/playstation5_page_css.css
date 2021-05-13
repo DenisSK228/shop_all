@@ -21,11 +21,20 @@ p {
     text-align: center;
 }
 
+li {
+    position: relative;
+}
+
 body {
     margin: 0;
     overflow-x: hidden;
     overflow-y: auto;  
     height: 100%;
+}
+
+._prosto_photo {
+    position: relative;
+    left: -40vw;
 }
 
 .img_playstation5_start {
@@ -42,7 +51,7 @@ body {
     color: whitesmoke;
     position: relative;
     top: -25vw;
-    left: 12vw;
+    left: -26vw;
 }
 
 .logo_playstation5_start {

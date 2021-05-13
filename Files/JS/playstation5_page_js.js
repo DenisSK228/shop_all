@@ -23,7 +23,6 @@ if (animItems.length > 0) {
                 if (!animItem.classList.contains('_anim_no_restart')) {
                     animItem.classList.remove('_active');
                 }
-                
             }
         }
     }
@@ -44,14 +43,25 @@ const vw = window.innerWidth / 100;
 const vh = window.innerHeight / 100;
 const px = vw / document.documentElement.clientWidth
 
-let el = document.querySelector('#anchor'),
+let el = document.querySelector('#rgb'),
     els = el.querySelectorAll('.li_spec'),
     elp = el.getBoundingClientRect();
 
 els.forEach(function (e,i) {
-    e.setAttribute('data-anchor-target', '#anchor');
+    e.setAttribute('data-anchor-target', '#rgb');
     e.setAttribute('data-550', 'left: 0%; opasity: 1;');
     e.setAttribute('data-' + Math.floor(200-(20*i)) + 'p-top', 'left: 400%; opasity: 0;');
+});
+
+
+let elr = document.querySelector('#main5_anchor'),
+    elsr = elr.querySelectorAll('.li_sup_spec'),
+    elpr = elr.getBoundingClientRect();
+
+elsr.forEach(function (egs,i) {
+    egs.setAttribute('data-anchor-target', '#main5_anchor');
+    egs.setAttribute('data-4850', 'left: 3%; opasity: 1;');
+    egs.setAttribute('data-' + Math.floor(400-(20*i)) + 'p-top', 'left: 400%; opasity: 0;');
 });
 
 skrollr.init();
