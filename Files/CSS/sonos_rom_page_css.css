@@ -1,0 +1,35 @@
+body {
+    background-color: #e0dee0;
+}
+
+.carousel-inner {
+    height: 100vh;
+    text-align: center;
+    
+}
+
+.carousel-control-next {
+    position: relative;
+    left: 25vw;
+}
+
+.carousel-item {
+    position: relative;
+    left: 10vw;
+}
+
+.btn_ctl {
+    position: relative;
+    top: -10vw;
+    background-color: rgb(157, 255, 0);
+}
+
+.carousel-control-prev {
+    background: red;
+}
+
+.carousel_and_css {
+    position: relative;
+    top: 3vw;
+    left: 50vw;
+}
