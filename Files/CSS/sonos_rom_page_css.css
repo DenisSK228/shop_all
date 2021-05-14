@@ -2,20 +2,24 @@ body {
     background-color: #e0dee0;
 }
 
+.carousellll {
+    position: relative;
+    top: 3vw;
+    left: 50vw;
+}
+
 .carousel-inner {
-    height: 100vh;
-    text-align: center;
-    
+    height: 100vh;   
 }
 
 .carousel-control-next {
     position: relative;
-    left: 25vw;
+    left: 55vw;
 }
 
 .carousel-item {
     position: relative;
-    left: 10vw;
+    left: 39vw;
 }
 
 .btn_ctl {
@@ -28,8 +32,7 @@ body {
     background: red;
 }
 
-.carousel_and_css {
+.carousel-control-prev {
     position: relative;
-    top: 3vw;
-    left: 50vw;
+    right: 249vw;
 }
