@@ -1,38 +1,26 @@
 body {
     background-color: #e0dee0;
 }
+a {
+    position: relative;
+    left: 20vw
+}
+
+.carousel {
+    position: relative;
+    top: 3vw;
+}
 
 .carousellll {
     position: relative;
     top: 3vw;
-    left: 50vw;
 }
 
 .carousel-inner {
     height: 100vh;   
 }
 
-.carousel-control-next {
-    position: relative;
-    left: 55vw;
-}
-
 .carousel-item {
     position: relative;
     left: 39vw;
-}
-
-.btn_ctl {
-    position: relative;
-    top: -10vw;
-    background-color: rgb(157, 255, 0);
-}
-
-.carousel-control-prev {
-    background: red;
-}
-
-.carousel-control-prev {
-    position: relative;
-    right: 249vw;
 }
