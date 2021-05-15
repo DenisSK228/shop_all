@@ -18,8 +18,8 @@
     src: url("../../sources/Font/aktiv-grotesk/AktivGroteskCorp-Medium.ttf");
 }
 
-body {
-    background-color: #e0dee0;
+.head {
+    background-color: #d8d8d8;
 }
 
 a {
@@ -55,4 +55,5 @@ a {
 
 .hr_up_main1 {
     width: 90vw;
+    height: 20px;
 }
