@@ -1,6 +1,27 @@
+@font-face {
+    font-family: SST_light;
+    src: url("../../sources/Font/SST_light/SST-Light.ttf");
+}
+
+@font-face {
+    font-family: SST_UL;
+    src: url("../../sources/Font/SST_UL/SST-UltraLight.ttf");
+}
+
+@font-face {
+    font-family: BebasNeue;
+    src: url("../../sources/Font/BebasNeue/bebasneuelight.ttf");
+}
+
+@font-face {
+    font-family: aktiv-grotesk;
+    src: url("../../sources/Font/aktiv-grotesk/AktivGroteskCorp-Medium.ttf");
+}
+
 body {
     background-color: #e0dee0;
 }
+
 a {
     position: relative;
     left: 20vw
@@ -9,18 +30,29 @@ a {
 .carousel {
     position: relative;
     top: 3vw;
-}
-
-.carousellll {
-    position: relative;
-    top: 3vw;
-}
-
-.carousel-inner {
-    height: 100vh;   
+    width: 100vw;
+    margin: 0;
 }
 
 .carousel-item {
     position: relative;
     left: 39vw;
+    margin: 0;
+}
+
+.main1_slogan_p {
+    font-family: aktiv-grotesk;
+    text-align: center;
+    font-size: 10vw;
+    margin: 0;
+    padding: 0;
+}
+
+.main1 {
+    position: relative;
+    top: 3vw;
+}
+
+.hr_up_main1 {
+    width: 90vw;
 }
