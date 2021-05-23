@@ -224,11 +224,15 @@ h {
 
 .all_main4 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.7fr 1fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-template-areas:
       "main4_photo all_text_for_main4";
+    width: 80vw;
+    position: relative;
+    top: -5vw;
+    left: 10.1vw;
 }
 
 .main4_photo {
@@ -244,6 +248,8 @@ h {
       "slogan_main4"
       "all_text_main4";
     grid-area: all_text_for_main4;
+    position: relative;
+    top: -5vw;
 }
 
 .slogan_main4 {
@@ -252,4 +258,68 @@ h {
 
 .all_text_main4 {
     grid-area: all_text_main4;
+}
+
+.slogan_main4_p {
+    font-family: aktiv-grotesk_m;
+    font-size: 2.2vw;
+    position: relative;
+    top: 14vw;
+    padding: 1vw;
+}
+
+.main4_photo_img {
+    width: 40vw;
+}
+
+.all_text_main4_p {
+    font-family: aktiv-grotesk_l;
+    font-size: 1.4vw;
+    position: relative;
+    top: 6vw;
+    padding: 1vw;
+}
+
+.main1 {
+    transform: translate(0px, -5%);
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+}
+
+.main1._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.grid-container {
+    transform: translate(0px, -5%);
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+}
+
+.grid-container._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.all_main3 {
+    transform: translate(0px, -5%);
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+}
+
+.all_main3._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+.all_main4 {
+    transform: translate(0px, -5%);
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+}
+
+.all_main4._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
 }
