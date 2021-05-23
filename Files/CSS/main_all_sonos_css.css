@@ -1,0 +1,37 @@
+.main {
+    width: 20vw;
+}
+
+.main1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "img_main1 text_for_main1"
+      ". ."
+      ". .";
+}
+.img_main1 {
+    grid-area: img_main1;
+}
+.text_for_main1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1.3fr 0.7fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "name_main1"
+      "des_main1"
+      "coast_main1";
+    grid-area: text_for_main1;
+}
+.coast_main1 {
+    grid-area: coast_main1;
+}
+.des_main1 {
+    grid-area: des_main1;
+}
+.name_main1 {
+    grid-area: name_main1;
+}
