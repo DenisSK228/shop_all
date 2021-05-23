@@ -23,8 +23,15 @@
     src: url("../../sources/Font/aktiv-grotesk/AktivGroteskCorp-Regular.ttf");
 }
 
+@font-face {
+    font-family: aktiv-grotesk_b;
+    src: url("../../sources/Font/aktiv-grotesk/AktivGroteskCorp-Bold.ttf");
+}
+
 body {
-    height: 5000px
+    height: 5000px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .head {
@@ -159,4 +166,90 @@ h {
     text-align: left;
     position: relative;
     top: 2.7vw;
+}
+
+.all_main3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "all_text_for-main3 main3_video";
+    height: 50vw;
+    position: relative;
+    top: 10vw;
+}
+
+.main3_video {
+    grid-area: main3_video;
+    position: relative;
+    top: -3vw;
+}
+
+.all_text_for-main3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "slogan_main3"
+      "all_text_main3";
+    grid-area: all_text_for-main3;
+}
+
+.slogan_main3 {
+    grid-area: slogan_main3;
+    position: relative;
+    top: 13vw;
+    font-family: aktiv-grotesk_m;
+    font-size: 2.05vw;
+    left: 10.2vw;
+}
+
+.all_text_main3 {
+    grid-area: all_text_main3;
+    position: relative;
+    top: 13vw;
+    left: 10.2vw;
+    font-family: aktiv-grotesk_l;
+    font-size: 1.4vw;
+}
+
+.video_1 {
+    width: 37vw;
+    position: relative;
+    top: 4vw;
+    left: 6vw;
+}
+
+.all_main4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "main4_photo all_text_for_main4";
+}
+
+.main4_photo {
+    grid-area: main4_photo;
+}
+
+.all_text_for_main4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "slogan_main4"
+      "all_text_main4";
+    grid-area: all_text_for_main4;
+}
+
+.slogan_main4 {
+    grid-area: slogan_main4;
+}
+
+.all_text_main4 {
+    grid-area: all_text_main4;
 }
